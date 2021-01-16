@@ -1,6 +1,6 @@
-package communication;
+package com.drozd.communication;
 
-import support.Mixer;
+import com.drozd.support.Mixer;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;

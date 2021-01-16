@@ -1,7 +1,9 @@
-package gui;
+package com.drozd.gui;
 
-import communication.IControlCenter;
-import communication.ISite;
+
+import com.drozd.communication.IControlCenter;
+import com.drozd.communication.ISite;
+import com.drozd.support.Mixer;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -10,7 +12,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
-import support.Mixer;
 
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;

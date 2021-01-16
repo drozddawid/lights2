@@ -1,4 +1,4 @@
-package support;
+package com.drozd.support;
 
 import java.io.Serializable;
 import java.util.ArrayList;

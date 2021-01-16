@@ -1,6 +1,6 @@
-package mixers;
+package com.drozd.mixers;
 
-import support.Mixer;
+import com.drozd.support.Mixer;
 
 import java.util.ArrayList;
 import java.util.Collections;

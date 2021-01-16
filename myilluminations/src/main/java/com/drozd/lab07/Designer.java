@@ -1,6 +1,7 @@
-package lab07;
+package com.drozd.lab07;
 
-import communication.IControlCenter;
+
+import com.drozd.communication.IControlCenter;
 
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;

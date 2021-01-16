@@ -1,9 +1,9 @@
-package gui;
+package com.drozd.gui;
 
-import communication.IManager;
+import com.drozd.communication.IManager;
+import com.drozd.lab07.Manager;
 import javafx.application.Application;
 import javafx.stage.Stage;
-import lab07.Manager;
 
 public class ManagerWindow extends Application {
     IManager manager;

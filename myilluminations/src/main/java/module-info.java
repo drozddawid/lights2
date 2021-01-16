@@ -1,4 +1,4 @@
 module myilluminations {
     requires transitive illuminations;
-    exports lab07;
+    exports com.drozd.lab07;
 }

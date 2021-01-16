@@ -1,9 +1,9 @@
-package lab07;
+package com.drozd.lab07;
 
-import communication.IControlCenter;
-import communication.IManager;
-import communication.ISite;
-import support.Mixer;
+import com.drozd.communication.IControlCenter;
+import com.drozd.communication.IManager;
+import com.drozd.communication.ISite;
+import com.drozd.support.Mixer;
 
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;

@@ -7,6 +7,7 @@ import lab07.Manager;
 
 public class ManagerWindow extends Application {
     IManager manager;
+
     @Override
     public void start(Stage stage) {
         manager = new Manager();

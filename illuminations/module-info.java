@@ -1,5 +1,5 @@
 module illuminations {
-	requires transitive java.rmi;
-	exports communication;
-	exports support;
+    requires transitive java.rmi;
+    exports communication;
+    exports support;
 }

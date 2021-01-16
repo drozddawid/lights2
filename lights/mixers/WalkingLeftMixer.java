@@ -8,9 +8,8 @@ import java.util.Collections;
 public class WalkingLeftMixer extends Mixer {
 
 
-
     public WalkingLeftMixer(String name, int numberOfLights, ArrayList<Integer> colors, int speed) {
-        super(name,numberOfLights,colors,speed);
+        super(name, numberOfLights, colors, speed);
     }
 
     @Override

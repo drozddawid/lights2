@@ -1,4 +1,4 @@
 module myilluminations {
-	requires transitive illuminations;
+    requires transitive illuminations;
     exports lab07;
 }

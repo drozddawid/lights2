@@ -7,7 +7,7 @@ import java.util.Collections;
 
 public class WalkingRightMixer extends Mixer {
     public WalkingRightMixer(String name, int numberOfLights, ArrayList<Integer> colors, int speed) {
-        super(name,numberOfLights,colors,speed);
+        super(name, numberOfLights, colors, speed);
     }
 
     @Override

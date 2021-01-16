@@ -19,14 +19,11 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 
-public class SiteWindow extends Application implements ISite {
+public class SiteWindow extends Application {
     String name;
     Mixer mixer;
     Scene scene;
 
-    public SiteWindow(String name) {
-        this.name = name;
-    }
 
     @Override
     public void start(Stage stage) {
@@ -50,33 +47,13 @@ public class SiteWindow extends Application implements ISite {
         try {
             Registry reg = LocateRegistry.getRegistry("localhost", 3000);
             IControlCenter ic = (IControlCenter) reg.lookup("ControlCenter");
-            SiteWindow site = new SiteWindow(name);
+            ISite site = new ISiteImpl();
             ISite isite = (ISite) UnicastRemoteObject.exportObject(site, 0);
             ic.add(isite);
         } catch (RemoteException | NotBoundException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-    }
-
-    @Override
-    public void startSite() throws RemoteException {
-
-    }
-
-    @Override
-    public void stopSite() throws RemoteException {
-
-    }
-
-    @Override
-    public void setMixer(Mixer m) throws RemoteException {
-        this.mixer = m;
-    }
-
-    @Override
-    public String getName() throws RemoteException {
-        return null;
     }
 
 
